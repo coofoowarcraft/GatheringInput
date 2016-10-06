@@ -6,15 +6,18 @@
   <script>
     function getName(){
       var fullName;
+      var last;
       fullName = document.getElementById("first").value;
-      document.getElementById("message").innerHTML = fullName;
+      last = document.getElementById("last").value;
+      document.getElementById("message").innerHTML = "Full Name: " + fullName +" " + last;
+
     }
 
   </script>
 </head>
 <body lang="en-US">
-   First: <input type="text" id="first">
-   Last: <input type="text" id="last">
+   First Name: <input type="text" id="first">
+   Last Name: <input type="text" id="last">
    <button type="button" id="doneButton" onclick="getName();">Done</button>
    <p id="message"</p>
 
